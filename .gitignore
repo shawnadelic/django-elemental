@@ -1,0 +1,14 @@
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*.swp
+*.sqlite3
+*~
+
+.tox
+.cache
+venv
