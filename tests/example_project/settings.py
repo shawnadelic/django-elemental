@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'tests',
     'ckeditor',
     'ckeditor_uploader',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,3 +111,9 @@ STATIC_URL = '/static/'
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_IMAGE_BACKEND = 'pillow'
+
+# REST Framework Settings
+
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 10
+}

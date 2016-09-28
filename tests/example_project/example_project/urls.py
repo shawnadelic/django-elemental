@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    url(r'^p/', include("elemental.urls")),
+    url(r'^el/', include("elemental.urls.api")),
+    url(r'^', include("elemental.urls.pages")),
 ]

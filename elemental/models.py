@@ -1,14 +1,14 @@
-from django.db import models
-from django.utils.encoding import force_text
-from django.urls import reverse
 from ckeditor.fields import RichTextField
+from django.db import models
+from django.urls import reverse
+from django.utils.encoding import force_text
 
 
 class Menu(models.Model):
     title = models.CharField(max_length=120)
     identifier = models.CharField(max_length=120)
-    pages = models.ManyToManyField("Page")
-    links = models.ManyToManyField("Link")
+    pages = models.ManyToManyField("Page", blank=True)
+    links = models.ManyToManyField("Link", blank=True)
 
     @property
     def items(self):
